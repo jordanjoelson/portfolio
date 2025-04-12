@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import memoji1 from '../assets/memoji1.png'
+import memoji2 from '../assets/memoji2.png'
 
 const Home = () => {
   const scrollRef = useRef(null)
@@ -159,19 +161,38 @@ const Home = () => {
         </div>
       </div>
           
-          {/* Contact Section */}
-          <div className="w-full max-w-[1400px] h-[300px] mt-40 mb-20 bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden p-10 flex items-center justify-center gap-10">
+      <div className="w-full max-w-[1400px] mt-40 mb-20 bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden p-10 flex justify-center items-center">
 
-          {/* Blank Image Placeholder */}
-          <div className="w-[100px] h-[100px] bg-white rounded-[16px]" />
+  {/* Memoji Wrapper */}
+  <div className="relative group w-[180px] h-[180px]">
 
-          {/* Text */}
-          <div className="text-black text-5xl font-semibold font-['Plus_Jakarta_Sans']">
-            Get in touch
-          </div>
+    {/* Hover Image */}
+    <img
+      src={memoji2}
+      alt="Memoji Hover"
+      className="w-full h-full rounded-[16px] object-cover -rotate-[10deg] opacity-0 group-hover:opacity-100 absolute inset-0"
+    />
 
-          </div>
+    {/* Main Image */}
+    <img
+      src={memoji1}
+      alt="Memoji"
+      className="w-full h-full rounded-[16px] object-cover -rotate-[10deg] group-hover:opacity-0 transition-none"
+    />
 
+    {/* Peace Emoji */}
+    <div className="absolute bottom-10 left-10 text-[40px] opacity-0 group-hover:opacity-100 transition-none z-10 -rotate-[10deg]">
+      ✌🏼
+    </div>
+
+  </div>
+
+  {/* Text */}
+  <div className="text-black text-5xl font-semibold font-['Plus_Jakarta_Sans'] -ml-5">
+    get in touch
+  </div>
+
+</div>
 
 
 
