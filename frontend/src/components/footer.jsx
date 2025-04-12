@@ -1,5 +1,6 @@
 const Footer = () => {
   return (
+    
     <footer className="w-full flex justify-center py-10 bg-transparent">
       <div className="w-full max-w-[1400px] flex justify-between items-center px-10">
         <div className="text-sky-700 text-2xl font-medium font-['Plus_Jakarta_Sans']">
