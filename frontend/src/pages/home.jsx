@@ -24,24 +24,48 @@ const Home = () => {
 
   return (
     <div className="min-h-screen pt-5 flex flex-col items-center">
-      {/* Hero Section */}
-      <div className="w-full max-w-[1400px] h-[1140px] relative bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden p-10">
-        <div className="absolute left-[60px] top-[100px]">
-          <div className="text-black text-3xl font-semibold font-['Plus_Jakarta_Sans'] mb-6">
-            Hi, I'm Jordan, a product designer with a passion for 3D and AR/VR
-          </div>
-          <div className="text-black text-2xl font-medium font-['Plus_Jakarta_Sans'] leading-[60px]">
-            <div>Co-founder of Teckes <span className="underline">Duolingo</span></div>
-            <div>Previously worked with <span className="underline">Meta</span>, <span className="underline">Google</span></div>
-            <div>Graduated from <span className="underline">CMU↗</span>, <span className="underline">SAIC</span></div>
-          </div>
-        </div>
-        <div className="w-96 h-[575px] left-[668px] top-[264px] absolute bg-white rounded-[32px]" />
-        <div className="w-32 h-28 left-[60px] top-[754px] absolute bg-white rounded-[32px]" />
-        <div className="left-[216px] top-[779px] absolute text-black text-2xl font-medium font-['Plus_Jakarta_Sans'] leading-[60px]">
-          Let’s chat
-        </div>
-      </div>
+   {/* Hero Section */}
+<div className="w-full max-w-[1400px] h-[1140px] mt-10 bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden p-10 flex justify-between items-start relative">
+
+{/* Left Text Side */}
+<div className="flex flex-col justify-between h-[800px] max-w-[600px]">
+  <div>
+  <div className="text-black text-5xl font-semibold font-['Plus_Jakarta_Sans'] flex items-center gap-2">
+  Hi I'm Jordan
+  <span className="relative inline-block group w-[50px] h-[50px]">
+    
+    {/* Peace Sign */}
+    <span className="absolute inset-0 flex items-center justify-center transition-all duration-500 group-hover:rotate-90 group-hover:opacity-0">
+      ✌🏼
+    </span>
+    
+    {/* DTX */}
+    <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:rotate-0 transition-all duration-500 text-xl font-bold rotate-0">
+      DTX
+    </span>
+  </span>
+</div>
+
+    <div className="mt-6 text-black text-3xl font-medium font-['Plus_Jakarta_Sans']">
+      A passionate full stack developer
+    </div>
+
+    <div className="mt-10 text-black text-2xl font-medium font-['Plus_Jakarta_Sans'] leading-[60px]">
+      <div>Co-founder of Teckes</div>
+      <div>Current student at <span className="underline">UTD</span></div>
+    </div>
+  </div>
+
+  <div className="text-black text-2xl font-medium font-['Plus_Jakarta_Sans']">
+    Looking for opportunities
+  </div>
+</div>
+
+{/* Right Image Side */}
+<div className="w-[600px] h-[800px] bg-white rounded-[32px]" />
+</div>
+
+
 
       {/* More About Me Section */}
       <div className="w-full flex justify-center gap-20 mt-40">
