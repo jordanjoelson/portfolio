@@ -2,11 +2,15 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-4 bg-sky-700 text-white">
-      <h1 className="text-2xl font-bold">Jordan Joelson</h1>
-      <div className="flex gap-4">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+    <nav className="w-full flex justify-center py-6 bg-transparent">
+      <div className="w-full max-w-[1400px] flex justify-between items-center px-10">
+        <Link to="/" className="text-rose-500 text-2xl font-bold font-['Plus_Jakarta_Sans']">
+          Jordan Joelson.
+        </Link>
+
+        <Link to="/about" className="text-black text-2xl font-bold font-['Plus_Jakarta_Sans']">
+          About
+        </Link>
       </div>
     </nav>
   )

@@ -15,7 +15,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Existing absolute boxes */}
         <div className="w-96 h-[575px] left-[668px] top-[264px] absolute bg-white rounded-[32px]" />
         <div className="w-32 h-28 left-[60px] top-[754px] absolute bg-white rounded-[32px]" />
         <div className="left-[216px] top-[779px] absolute text-black text-2xl font-medium font-['Plus_Jakarta_Sans'] leading-[60px]">
