@@ -26,48 +26,47 @@ const Home = () => {
 
   return (
     <div className="min-h-screen pt-5 flex flex-col items-center">
-   {/* Hero Section */}
+{/* Hero Section */}
 <div className="w-full max-w-[1400px] h-[1140px] mt-10 bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden p-10 flex justify-between items-start relative">
 
-{/* Left Text Side */}
-<div className="flex flex-col justify-between h-[800px] max-w-[600px]">
-  <div>
-  <div className="text-black text-5xl font-semibold font-['Plus_Jakarta_Sans'] flex items-center gap-2">
-  Hi I'm Jordan
-  <span className="relative inline-block group w-[50px] h-[50px]">
-    
-    {/* Peace Sign */}
-    <span className="absolute inset-0 flex items-center justify-center transition-all duration-500 group-hover:rotate-90 group-hover:opacity-0">
-      ✌🏼
-    </span>
-    
-    {/* DTX */}
-    <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:rotate-0 transition-all duration-500 text-xl font-bold rotate-0">
-      DTX
-    </span>
-  </span>
-</div>
+  {/* Left Text Side */}
+  <div className="flex flex-col justify-between h-[800px] max-w-[600px]">
+    <div>
+      <div className="text-black text-5xl font-semibold font-['Plus_Jakarta_Sans'] flex items-center gap-2">
+        Hi I'm Jordan
+        <span className="relative inline-block group w-[50px] h-[50px]">
 
-    <div className="mt-6 text-black text-3xl font-medium font-['Plus_Jakarta_Sans']">
-      A passionate full stack developer
+          {/* Peace Sign */}
+          <span className="absolute inset-0 flex items-center justify-center transition-all duration-500 group-hover:rotate-[90deg] group-hover:opacity-0">
+            ✌🏼
+          </span>
+
+          {/* DTX */}
+          <span className="absolute inset-0 flex items-center justify-center opacity-0 rotate-[-90deg] group-hover:opacity-100 group-hover:rotate-0 transition-all duration-500 text-xl font-bold">
+            DTX
+          </span>
+
+        </span>
+      </div>
+
+      <div className="mt-6 text-black text-3xl font-medium font-['Plus_Jakarta_Sans']">
+        A passionate full stack developer
+      </div>
+
+      <div className="mt-10 text-black text-2xl font-medium font-['Plus_Jakarta_Sans'] leading-[60px]">
+        <div>Co-founder of Teckes</div>
+        <div>Current student at <span className="underline">UTD</span></div>
+      </div>
     </div>
 
-    <div className="mt-10 text-black text-2xl font-medium font-['Plus_Jakarta_Sans'] leading-[60px]">
-      <div>Co-founder of Teckes</div>
-      <div>Current student at <span className="underline">UTD</span></div>
+    <div className="text-black text-2xl font-medium font-['Plus_Jakarta_Sans']">
+      Looking for opportunities
     </div>
   </div>
 
-  <div className="text-black text-2xl font-medium font-['Plus_Jakarta_Sans']">
-    Looking for opportunities
-  </div>
+  {/* Right Image Side */}
+  <div className="w-[600px] h-[800px] bg-white rounded-[32px]" />
 </div>
-
-{/* Right Image Side */}
-<div className="w-[600px] h-[800px] bg-white rounded-[32px]" />
-</div>
-
-
 
       {/* More About Me Section */}
       <div className="w-full flex justify-center gap-20 mt-40">
@@ -163,33 +162,38 @@ const Home = () => {
           
       <div className="w-full max-w-[1400px] mt-40 mb-20 bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden p-10 flex justify-center items-center">
 
-  {/* Memoji Wrapper */}
-  <div className="relative group w-[180px] h-[180px]">
+  {/* Wrapper for Image + Text Hover */}
+  <div className="flex items-center group cursor-pointer">
 
-    {/* Hover Image */}
-    <img
-      src={memoji2}
-      alt="Memoji Hover"
-      className="w-full h-full rounded-[16px] object-cover -rotate-[10deg] opacity-0 group-hover:opacity-100 absolute inset-0"
-    />
+    {/* Memoji Wrapper */}
+    <div className="relative w-[180px] h-[180px]">
 
-    {/* Main Image */}
-    <img
-      src={memoji1}
-      alt="Memoji"
-      className="w-full h-full rounded-[16px] object-cover -rotate-[10deg] group-hover:opacity-0 transition-none"
-    />
+      {/* Hover Image */}
+      <img
+        src={memoji2}
+        alt="Memoji Hover"
+        className="w-full h-full rounded-[16px] object-cover -rotate-[10deg] opacity-0 group-hover:opacity-100 absolute inset-0"
+      />
 
-    {/* Peace Emoji */}
-    <div className="absolute bottom-10 left-10 text-[40px] opacity-0 group-hover:opacity-100 transition-none z-10 -rotate-[10deg]">
-      ✌🏼
+      {/* Main Image */}
+      <img
+        src={memoji1}
+        alt="Memoji"
+        className="w-full h-full rounded-[16px] object-cover -rotate-[10deg] group-hover:opacity-0 transition-none"
+      />
+
+      {/* Peace Emoji */}
+      <div className="absolute bottom-10 left-10 text-[40px] opacity-0 group-hover:opacity-100 transition-none z-10 -rotate-[10deg]">
+        ✌🏼
+      </div>
+
     </div>
 
-  </div>
+    {/* Text */}
+    <div className="text-black text-5xl font-semibold font-['Plus_Jakarta_Sans'] -ml-5">
+      get in touch
+    </div>
 
-  {/* Text */}
-  <div className="text-black text-5xl font-semibold font-['Plus_Jakarta_Sans'] -ml-5">
-    get in touch
   </div>
 
 </div>
