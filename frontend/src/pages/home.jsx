@@ -80,16 +80,16 @@ const Home = () => {
               About me
             </div>
             <div className="w-96 h-96 left-[39px] top-[64px] absolute text-black text-2xl font-normal font-['Plus_Jakarta_Sans'] leading-[60px]">
-              Lorem ipsum dolor sit amet...
-            </div>
+            I’m a freshman at UTD passionate about the intersection of business and technology. I’ve always been curious about how things work and enjoy diving into new projects, learning as I go, and growing my skills through hands-on experience.        </div>
           </div>
           <div className="w-[461px] h-[556px] relative bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden">
             <div className="left-[38px] top-[36px] absolute text-black text-3xl font-semibold font-['Plus_Jakarta_Sans']">
               Connect
             </div>
             <div className="w-96 h-96 left-[38px] top-[75px] absolute text-black text-2xl font-normal font-['Plus_Jakarta_Sans'] leading-[60px]">
-              Lorem ipsum dolor sit amet...
-            </div>
+            I enjoy meeting new people, whether it’s to chat casually, share ideas, or explore potential opportunities to work together. If you are interested in tech, business, or just want to say hi, I’m always open to connecting.
+
+</div>
           </div>
         </div>
 
@@ -100,16 +100,16 @@ const Home = () => {
               Interests
             </div>
             <div className="w-96 h-96 left-[26px] top-[66px] absolute text-black text-2xl font-normal font-['Plus_Jakarta_Sans'] leading-[60px]">
-              Lorem ipsum dolor sit amet...
-            </div>
+            I’m really into health, fitness, and design. You’ll often find me working out, bouldering, or exploring creative projects. Traveling and spending meaningful time with friends are also important parts of my life and keep me energized. </div>
           </div>
           <div className="mt-20 w-[461px] h-[556px] relative bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden">
             <div className="left-[29px] top-[32px] absolute text-black text-3xl font-semibold font-['Plus_Jakarta_Sans']">
               Journey
             </div>
             <div className="w-96 h-96 left-[29px] top-[71px] absolute text-black text-2xl font-normal font-['Plus_Jakarta_Sans'] leading-[60px]">
-              Lorem ipsum dolor sit amet...
-            </div>
+            I began with little programming experience but have been growing rapidly by taking on new challenges. I enjoy learning by doing, expanding my skills in both tech and business, and pushing myself outside of my comfort zone.
+
+</div>
           </div>
           <div className="mt-20 w-[461px] h-72 relative bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden">
             <div className="left-[25px] top-[28px] absolute text-black text-3xl font-semibold font-['Plus_Jakarta_Sans']">
