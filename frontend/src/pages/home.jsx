@@ -30,55 +30,63 @@ const Home = () => {
   return (
     <div className="min-h-screen pt-5 flex flex-col items-center">
 
-      {/* Hero Section */}
-      <div className="w-full max-w-[1400px] h-[1140px] mt-5 bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden p-10 flex flex-col relative">
-        
-        {/* Navbar Inside Hero */}
-        
-        <div className="-mt-5">
-        <Navbar />
-        </div>
+{/* Hero Section */}
+<div className="w-full max-w-[1400px] mt-5 bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden py-6 md:py-10 flex flex-col relative">
 
-        <div className="flex justify-between items-start flex-grow">
-          {/* Left Text Side */}
-          <div className="flex flex-col justify-between h-[800px] max-w-[600px]">
-            <div>
-              <div className="text-black text-5xl font-semibold font-['Plus_Jakarta_Sans'] flex items-center gap-2">
-                Hi I'm Jordan
-                <span className="relative inline-block group w-[50px] h-[50px]">
-                  {/* Peace Sign */}
-                  <span className="absolute inset-0 flex items-center justify-center transition-all duration-500 group-hover:rotate-[90deg] group-hover:opacity-0">
-                    ✌🏼
-                  </span>
-                  {/* DTX */}
-                  <span className="absolute inset-0 flex items-center justify-center opacity-0 rotate-[-90deg] group-hover:opacity-100 group-hover:rotate-0 transition-all duration-500 text-xl font-bold">
-                    DTX
-                  </span>
-                </span>
-              </div>
+  {/* Navbar */}
+  <div className="-mt-5">
+    <Navbar />
+  </div>
 
-              <div className="mt-6 text-black text-3xl font-medium font-['Plus_Jakarta_Sans']">
-                A passionate full stack developer
-              </div>
-
-              <div className="mt-10 text-black text-2xl font-medium font-['Plus_Jakarta_Sans'] leading-[60px]">
-                <div>Co-founder of Teckes</div>
-                <div>Current student at <span className="underline">UTD</span></div>
-              </div>
-            </div>
-
-            <div className="text-black text-2xl font-medium font-['Plus_Jakarta_Sans']">
-              Looking for opportunities
-            </div>
-          </div>
-
-          {/* Right Image Side */}
-          <div className="w-[600px] h-[800px] bg-white rounded-[32px]" />
-        </div>
+  {/* Main Content with matching padding */}
+  <div className="w-full flex flex-col lg:flex-row justify-between items-center px-4 md:px-10 mt-10">
+    {/* Left Text Side */}
+    <div className="flex flex-col gap-6 max-w-[600px] text-center lg:text-left">
+      <div className="text-black text-2xl md:text-4xl font-semibold font-['Plus_Jakarta_Sans'] flex justify-center lg:justify-start items-center gap-2">
+        Hi I'm Jordan
+        <span className="relative inline-block group w-[40px] h-[40px] md:w-[50px] md:h-[50px]">
+          {/* Peace Sign */}
+          <span className="absolute inset-0 flex items-center justify-center transition-all duration-500 group-hover:rotate-[90deg] group-hover:opacity-0">
+            ✌🏼
+          </span>
+          {/* DTX */}
+          <span className="absolute inset-0 flex items-center justify-center opacity-0 rotate-[-90deg] group-hover:opacity-100 group-hover:rotate-0 transition-all duration-500 text-sm md:text-xl font-bold">
+            DTX
+          </span>
+        </span>
       </div>
 
+      <div className="text-black text-lg md:text-2xl font-medium font-['Plus_Jakarta_Sans']">
+        A passionate full stack developer
+      </div>
+
+      <div className="text-black text-base md:text-xl font-medium font-['Plus_Jakarta_Sans'] leading-relaxed">
+        <div>Co-founder of Teckes</div>
+        <div>Current student at <span className="underline">UTD</span></div>
+      </div>
+    </div>
+
+    {/* Right Image Side */}
+    <div className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] bg-white rounded-[32px] mt-10 lg:mt-0" />
+  </div>
+
+  {/* Looking for Opportunities + Button */}
+  <div className="w-full flex justify-center items-center px-4 md:px-10 mt-10">
+    <div className="flex flex-col sm:flex-row items-center gap-4 bg-white rounded-[32px] px-4 md:px-6 py-3 md:py-4">
+      <div className="text-black text-base md:text-xl font-medium font-['Plus_Jakarta_Sans']">
+        Looking for opportunities
+      </div>
+      <button className="bg-black text-white text-sm md:text-base font-medium rounded-[32px] px-5 md:px-6 py-2">
+        Connect
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
       {/* More About Me Section */}
-{/* More About Me Section */}
 <div className="w-full flex justify-center gap-20 mt-40">
   {/* Left Column */}
   <div className="flex flex-col gap-20">

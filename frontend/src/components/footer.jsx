@@ -1,3 +1,5 @@
+import ResumePDF from '../assets/Jordan_Resume.pdf'
+
 const Footer = () => {
   return (
     <footer className="w-full flex justify-center py-6 md:py-10 bg-transparent">
@@ -5,13 +7,26 @@ const Footer = () => {
         
         {/* Links */}
         <div className="flex gap-4 md:gap-8">
-          <a href="#" className="text-black text-base md:text-lg font-medium font-['Plus_Jakarta_Sans']">
+          <a
+            href={ResumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black text-base md:text-lg font-medium font-['Plus_Jakarta_Sans']"
+          >
             Resume
           </a>
-          <a href="#" className="text-black text-base md:text-lg font-medium font-['Plus_Jakarta_Sans']">
+          <a
+            href="https://www.linkedin.com/in/jordanjoelson/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black text-base md:text-lg font-medium font-['Plus_Jakarta_Sans']"
+          >
             LinkedIn
           </a>
-          <a href="mailto:your@email.com" className="text-black text-base md:text-lg font-medium font-['Plus_Jakarta_Sans']">
+          <a
+            href="mailto:jordan@jordanjoelson.com"
+            className="text-black text-base md:text-lg font-medium font-['Plus_Jakarta_Sans']"
+          >
             Email
           </a>
         </div>
