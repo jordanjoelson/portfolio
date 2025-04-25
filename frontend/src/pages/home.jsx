@@ -5,6 +5,10 @@ import memoji2 from '../assets/memoji2.png'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 import heroIMG from '../assets/heroIMG.png'
+import MicroVaultCover from '../assets/MicroVault_Cover.png'
+import GatewayCover from '../assets/Gateway_Cover.png'
+import BurritoBondCover from '../assets/BurritoBond_Cover.png'
+import CaseStudyCover from '../assets/CaseStudy_Cover.png'
 
 
 
@@ -91,9 +95,15 @@ const Home = () => {
     <div className="text-black text-base md:text-xl font-medium font-['Plus_Jakarta_Sans']">
       Looking for opportunities
     </div>
-    <button className="bg-[#0369a1] text-white text-sm md:text-base font-medium rounded-[32px] px-5 md:px-6 py-2 hover:bg-[#df4c73] hover:text-white transition-colors duration-300">
+    <a
+  href="https://www.linkedin.com/in/jordanjoelson/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#0369a1] text-white text-sm md:text-base font-medium rounded-[32px] px-5 md:px-6 py-2 hover:bg-[#df4c73] hover:text-white transition-colors duration-300 text-center"
+>
   Connect
-</button>
+</a>
+
 
 
 
@@ -181,7 +191,7 @@ const Home = () => {
 
 
 
-     {/* Projects Section */}
+{/* Projects Section */}
 <div className="w-full mt-40 px-4 md:px-10">
   <div className="max-w-[1400px] mx-auto mb-10 flex flex-col md:flex-row justify-between items-center gap-6">
     <div className="text-black text-3xl md:text-5xl font-semibold font-['Plus_Jakarta_Sans']">
@@ -198,12 +208,38 @@ const Home = () => {
   </div>
 
   <div ref={scrollRef} className="overflow-x-scroll scrollbar-hide py-5">
-    <div className="flex gap-6 md:gap-10 w-max pl-[100px] md:pl-[200px] pr-[50px] md:pr-[100px]">
-      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
-      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
-      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
-      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
-      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
+    <div className="flex gap-6 md:gap-10 w-max pl-[50px] md:pl-[200px] pr-[50px] md:pr-[100px]">
+      {/* MicroVault */}
+      <a href="https://microvault.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <div
+          className="min-w-[280px] md:min-w-[600px] h-[200px] md:h-[400px] bg-cover bg-center rounded-[32px] transform transition-transform duration-300 hover:scale-105"
+          style={{ backgroundImage: `url(${MicroVaultCover})` }}
+        />
+      </a>
+
+      {/* Gateway */}
+      <a href="https://devpost.com/software/gateway-f5ed10" target="_blank" rel="noopener noreferrer">
+        <div
+          className="min-w-[280px] md:min-w-[600px] h-[200px] md:h-[400px] bg-cover bg-center rounded-[32px] transform transition-transform duration-300 hover:scale-105"
+          style={{ backgroundImage: `url(${GatewayCover})` }}
+        />
+      </a>
+
+      {/* Burrito Bond */}
+      <a href="https://burritobond.wixsite.com/burrito-bond" target="_blank" rel="noopener noreferrer">
+        <div
+          className="min-w-[280px] md:min-w-[600px] h-[200px] md:h-[400px] bg-cover bg-center rounded-[32px] transform transition-transform duration-300 hover:scale-105"
+          style={{ backgroundImage: `url(${BurritoBondCover})` }}
+        />
+      </a>
+
+      {/* Case Study */}
+      <a href="https://www.canva.com/design/DAGkwsClkRA/pwD-mo8EC1ZYgs3HMzW-3g/edit?utm_content=DAGkwsClkRA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
+        <div
+          className="min-w-[280px] md:min-w-[600px] h-[200px] md:h-[400px] bg-cover bg-center rounded-[32px] transform transition-transform duration-300 hover:scale-105"
+          style={{ backgroundImage: `url(${CaseStudyCover})` }}
+        />
+      </a>
     </div>
   </div>
 </div>
