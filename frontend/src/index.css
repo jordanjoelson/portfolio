@@ -19,7 +19,7 @@
     background-position: center;
     margin: 0;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.35); /* White w/ transparency */
+    background-color: rgba(255, 255, 255, 0.6); /* White w/ transparency */
     background-blend-mode: lighten; /* Optional */
   }
   
