@@ -31,7 +31,7 @@ const Home = () => {
     <div className="min-h-screen pt-5 flex flex-col items-center">
 
       {/* Hero Section */}
-      <div className="w-full max-w-[1400px] h-[1140px] mt-10 bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden p-10 flex flex-col relative">
+      <div className="w-full max-w-[1400px] h-[1140px] mt-5 bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden p-10 flex flex-col relative">
         
         {/* Navbar Inside Hero */}
         
