@@ -116,21 +116,18 @@ const Home = () => {
 
 
 
-      {/* More About Me Section */}
-<div className="w-full flex justify-center gap-20 mt-40">
+<div className="w-full flex flex-col lg:flex-row justify-center gap-10 mt-40 px-4">
   {/* Left Column */}
-  <div className="flex flex-col gap-20">
-    <div className="w-96 h-36 text-black text-5xl font-semibold font-['Plus_Jakarta_Sans']">
+  <div className="flex flex-col gap-10 flex-grow max-w-full lg:max-w-[500px]">
+    <div className="text-black text-4xl md:text-5xl font-semibold font-['Plus_Jakarta_Sans']">
       More about me
     </div>
 
     {/* About Me Card */}
     <Link to="/about" className="transform hover:rotate-2 transition-transform duration-300">
-      <div className="w-[461px] h-[556px] relative bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden">
-        <div className="left-[39px] top-[25px] absolute text-black text-3xl font-semibold font-['Plus_Jakarta_Sans']">
-          About me
-        </div>
-        <div className="w-96 h-96 left-[39px] top-[64px] absolute text-black text-2xl font-normal font-['Plus_Jakarta_Sans'] leading-[60px]">
+      <div className="bg-sky-100 rounded-[32px] outline outline-1 outline-slate-300 overflow-hidden p-6 max-w-[461px] w-full">
+        <div className="text-black text-2xl md:text-3xl font-semibold mb-4">About me</div>
+        <div className="text-black text-xl md:text-2xl font-normal leading-[40px] md:leading-[60px]">
           I’m a freshman at UTD passionate about the intersection of business and technology. I’ve always been curious about how things work and enjoy diving into new projects, learning as I go, and growing my skills through hands-on experience.
         </div>
       </div>
@@ -138,11 +135,9 @@ const Home = () => {
 
     {/* Connect Card */}
     <Link to="/about" className="transform hover:rotate-2 transition-transform duration-300">
-      <div className="w-[461px] h-[556px] relative bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden">
-        <div className="left-[38px] top-[36px] absolute text-black text-3xl font-semibold font-['Plus_Jakarta_Sans']">
-          Connect
-        </div>
-        <div className="w-96 h-96 left-[38px] top-[75px] absolute text-black text-2xl font-normal font-['Plus_Jakarta_Sans'] leading-[60px]">
+      <div className="bg-sky-100 rounded-[32px] outline outline-1 outline-slate-300 overflow-hidden p-6 max-w-[461px] w-full">
+        <div className="text-black text-2xl md:text-3xl font-semibold mb-4">Connect</div>
+        <div className="text-black text-xl md:text-2xl font-normal leading-[40px] md:leading-[60px]">
           I enjoy meeting new people, whether it’s to chat casually, share ideas, or explore potential opportunities to work together. If you are interested in tech, business, or just want to say hi, I’m always open to connecting.
         </div>
       </div>
@@ -150,41 +145,34 @@ const Home = () => {
   </div>
 
   {/* Right Column */}
-  <div className="flex flex-col">
+  <div className="flex flex-col gap-10 flex-grow max-w-full lg:max-w-[500px]">
     {/* Interests Card */}
     <Link to="/about" className="transform hover:-rotate-2 transition-transform duration-300">
-      <div className="w-[461px] h-[556px] relative bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden">
-        <div className="left-[26px] top-[27px] absolute text-black text-3xl font-semibold font-['Plus_Jakarta_Sans']">
-          Interests
-        </div>
-        <div className="w-96 h-96 left-[26px] top-[66px] absolute text-black text-2xl font-normal font-['Plus_Jakarta_Sans'] leading-[60px]">
+      <div className="bg-sky-100 rounded-[32px] outline outline-1 outline-slate-300 overflow-hidden p-6 max-w-[461px] w-full">
+        <div className="text-black text-2xl md:text-3xl font-semibold mb-4">Interests</div>
+        <div className="text-black text-xl md:text-2xl font-normal leading-[40px] md:leading-[60px]">
           I’m really into health, fitness, and design. You’ll often find me working out, bouldering, or exploring creative projects. Traveling and spending meaningful time with friends are also important parts of my life and keep me energized.
         </div>
       </div>
     </Link>
 
     {/* Journey Card */}
-    <Link to="/about" className="transform hover:-rotate-2 transition-transform duration-300 mt-20">
-      <div className="w-[461px] h-[556px] relative bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden">
-        <div className="left-[29px] top-[32px] absolute text-black text-3xl font-semibold font-['Plus_Jakarta_Sans']">
-          Journey
-        </div>
-        <div className="w-96 h-96 left-[29px] top-[71px] absolute text-black text-2xl font-normal font-['Plus_Jakarta_Sans'] leading-[60px]">
+    <Link to="/about" className="transform hover:-rotate-2 transition-transform duration-300">
+      <div className="bg-sky-100 rounded-[32px] outline outline-1 outline-slate-300 overflow-hidden p-6 max-w-[461px] w-full">
+        <div className="text-black text-2xl md:text-3xl font-semibold mb-4">Journey</div>
+        <div className="text-black text-xl md:text-2xl font-normal leading-[40px] md:leading-[60px]">
           I began with little programming experience but have been growing rapidly by taking on new challenges. I enjoy learning by doing, expanding my skills in both tech and business, and pushing myself outside of my comfort zone.
         </div>
       </div>
     </Link>
 
     {/* ...and more! Card */}
-    <Link to="/about" className="transform hover:-rotate-2 transition-transform duration-300 mt-20">
-      <div className="w-[461px] h-72 relative bg-sky-100 rounded-[32px] outline outline-1 outline-offset-[-1px] outline-slate-300 overflow-hidden">
-        <div className="left-[25px] top-[28px] absolute text-black text-3xl font-semibold font-['Plus_Jakarta_Sans']">
-          ...and more!
-        </div>
-        <div className="left-[130px] top-[207px] absolute text-black text-2xl font-normal font-['Plus_Jakarta_Sans']">
+    <Link to="/about" className="transform hover:-rotate-2 transition-transform duration-300">
+      <div className="bg-sky-100 rounded-[32px] outline outline-1 outline-slate-300 overflow-hidden p-6 max-w-[461px] w-full">
+        <div className="text-black text-2xl md:text-3xl font-semibold mb-4">...and more!</div>
+        <div className="text-black text-xl md:text-2xl font-normal">
           Explore all content →
         </div>
-        <div className="w-80 h-16 left-[67px] top-[191px] absolute bg-Color-2" />
       </div>
     </Link>
   </div>
@@ -192,10 +180,11 @@ const Home = () => {
 
 
 
+
      {/* Projects Section */}
-<div className="w-full mt-40 px-10">
-  <div className="max-w-[1400px] mx-auto mb-10 flex justify-between items-center">
-    <div className="w-96 h-14 text-black text-5xl font-semibold font-['Plus_Jakarta_Sans']">
+<div className="w-full mt-40 px-4 md:px-10">
+  <div className="max-w-[1400px] mx-auto mb-10 flex flex-col md:flex-row justify-between items-center gap-6">
+    <div className="text-black text-3xl md:text-5xl font-semibold font-['Plus_Jakarta_Sans']">
       My projects →
     </div>
     <div className="flex gap-4">
@@ -208,13 +197,13 @@ const Home = () => {
     </div>
   </div>
 
-  <div ref={scrollRef} className="overflow-x-scroll scrollbar-hide py-5"> {/* Added py-5 */}
-    <div className="flex gap-10 w-max pl-[200px] pr-[100px]">
-      <div className="w-[600px] h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
-      <div className="w-[600px] h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
-      <div className="w-[600px] h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
-      <div className="w-[600px] h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
-      <div className="w-[600px] h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
+  <div ref={scrollRef} className="overflow-x-scroll scrollbar-hide py-5">
+    <div className="flex gap-6 md:gap-10 w-max pl-[100px] md:pl-[200px] pr-[50px] md:pr-[100px]">
+      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
+      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
+      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
+      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
+      <div className="min-w-[280px] md:w-[600px] h-[300px] md:h-[500px] bg-sky-100 rounded-[32px] transform transition-transform duration-300 hover:scale-105" />
     </div>
   </div>
 </div>
